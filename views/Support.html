@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duquesne Incline</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+
+</head>
+<body>
+    <header>
+        <h1 id="head1">Duquesne Incline
+            <img src="../static/logo.png" width = '200px' height = '250px' alt="Duquesne Incline Banner">
+        </h1>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../views/Visit Us.html">Visit Us</a>
+        <a href="../views/History & Tours.html">History & Tours</a>
+        <a href="../views/Gift Shop.html">Gift Shop</a>
+        <a href="../views/Support.html">Support</a>
+    </nav>
+    </header>
+
+<section class="mailing-list">
+  <h2>Join Our Mailing List</h2>
+  <p>Stay updated on events and promotions!</p>
+  <form id="mailing-form">
+    <div class="form-group">
+      <label for="name">Name </label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        required 
+        minlength="2" 
+        maxlength="50" 
+        placeholder="Your name"
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required 
+        placeholder="example@email.com"
+      >
+    </div>
+
+    <div class="form-group checkbox-group">
+      <input 
+        type="checkbox" 
+        id="sms-optin" 
+        name="sms_optin"
+      >
+      <label for="sms-optin">Receive updates via SMS text</label>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Mobile Phone</label>
+      <input 
+        type="tel" 
+        id="phone" 
+        name="phone" 
+        pattern="[0-9]{10}" 
+        placeholder="1234567890"
+        title="10-digit number (no dashes)"
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="zip">Zip Code</label>
+      <input 
+        type="text" 
+        id="zip" 
+        name="zip" 
+        pattern="\d{5}" 
+        placeholder="12345"
+        title="5-digit zip code"
+      >
+    </div>
+
+    <button type="submit" class="submit-btn" id = "form-submit" onclick = "validate()">Subscribe</button>
+  </form>
+  <p id = "ValidateMsg"></p>
+</section>
+
+<section class="social-media">
+  <p>Follow us on social media:</p>
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/TheDuquesneIncline" target="_blank" rel="noopener noreferrer">
+        <img src="../static/facebook-icon.png" alt="Facebook"> Facebook
+      </a>
+    </li>
+    </ul>
+</section>
+
+<footer>
+  <p>Phone Number: 412.381.1665 | Email: duq.incline@duquesneincline.org</p>
+  <p>Location: 1197 WEST CARSON STREET PITTSBURGH, PA. 15219</p>
+  <p>Hours: Everyday From 6:30 a.m. to 12:30 a.m.</p>
+</footer>
+</body>
+</html>
