@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Your Name">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Your Name professional website">
+    <title>Margaret Chai - Contact</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <h1 id="webname">Margaret Chai</h1>
+    <script defer src="../static/script.js"></script>
+</head>
+<nav class="title-nav">
+<ul>
+    <li><a class="nav-link" href="../index.html">About</a></li>
+    <li><a class="nav-link" href="../views/cv.html">Resume</a></li>
+    <li><a class="nav-link" href="../views/fun.html">Play</a></li>
+    <li><a class="nav-link" href="../views/contact.html">Contact</a></li>
+</ul>
+</nav>
+<body onload="addYear()">
+
+    <div class="main">
+        <h2>Contact Me</h2>
+  
+        <form action="">
+            <label for="UserName">Your name (required): </label>
+            <input type="text" name="UserName" id="UserName" required>
+ 
+ 
+            <label for="UserEmail">Your email (required): </label>
+            <input type="email" name="UserEmail" id="UserEmail" required>
+ 
+ 
+            <label for="UserText">Your text (required): </label>
+            <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea>
+ 
+ 
+            <input type="submit" value="Send" onclick="validate()">
+        </form>
+        <p id="ValidateMsg"></p>
+    </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Contact Method</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Email</td>
+                    <td>shaoyuc@andrew.cmu.edu</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+1 (206) 686-7777</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>13678 NE 12th, Redmond, WA, 98007</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="copyYear"></span> Margaret Chai. All rights reserved.</p>
+    </footer>
+</body>
+</html>
